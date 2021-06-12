@@ -1,0 +1,341 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),url(img/bgtailors.jpeg);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background-position: center;
+}
+nav {
+    background: rgb(72, 88, 88);
+    color: rgb(255, 255, 255);
+    display: flex;
+    justify-content: space-between;
+}
+nav .mainMenu {
+    display: flex;
+    list-style: none;
+}
+nav .mainMenu li a {
+    display: inline-block;
+    padding: 20px;
+    font-size: 20px;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: white;
+}
+nav .mainMenu li a.active{
+    color: rgb(228, 81, 23);
+}
+nav .mainmenu li a:hover{
+    color: rgb(228, 81, 23);
+    background: #2c2d33;
+}
+nav .openMenu {
+    font-size: 2rem;
+    margin:20px;
+    display:none;
+    cursor: pointer;
+}
+nav .mainMenu .closeMenu , .icons i {
+    font-size: 2rem;
+    display: none;
+    cursor: pointer;
+}
+.fa-facebook:hover {color:rgb(0, 110, 255)}
+.fa-whatsapp:hover {color:rgb(40, 204, 67)}
+nav .logo {
+    margin: 6px;
+    font-size: 25px;
+    cursor: pointer;
+    transition: 0.5s ease;
+}
+.logo h1:hover{
+    color: rgb(0, 0, 0);
+}
+.cover {
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url(img/my\ choice\ tailors\ suit.jpg);
+    background-size: cover;
+}
+.cover h6 {
+    color:rgb(255, 251, 246);
+    font-size: 25px;
+    position: absolute;
+    top: 30%;
+    left: 20%;
+    transform: translate(-50%, -50%);
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+.cover h5 {
+    color:rgb(255, 251, 246);
+    font-size: 25px;
+    position: absolute;
+    top: 35%;
+    left: 7%;
+    transform: translate(-50%, -50%);
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.cover h1 {
+    color: rgb(255, 251, 246);
+    position: absolute;
+    top: 55%;
+    left: 25%;
+    transform: translate(-50%, -50%);
+    font-size: 50px;
+    font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif
+}
+.cover h2 {
+    color: rgb(255, 251, 246);
+    position: absolute;
+    top: 65%;
+    left: 29%;
+    transform: translate(-50%, -50%);
+    font-size: 50px;
+    font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif
+}
+
+.column{
+    float: left;
+    width: 33.33%;
+    padding: 10px;
+    position: relative;
+    text-align: center;
+    color: white;
+    
+}
+.text {
+    position:absolute;
+    top: 90%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 25px;
+    color: rgba(255, 255, 255, 0.979);
+    cursor: pointer;
+}
+
+.row::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+.column a:hover {
+    transition: 0.3s ease;
+}
+
+.btns {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.btns a button{
+    padding: 9px 18px;
+    margin: 9px 11px;
+    font-size: 38px;
+    cursor:pointer;
+    border: none;
+    transition: 0.5s ease;
+    background: lightgrey;
+    border-radius: 13px;
+}
+
+.btns a button:hover{
+    color:rgb(255, 255, 255);
+    background:deepskyblue;
+}
+.column a {
+    opacity: 0.8;
+    filter: alpha(opacity=80);
+    transition: transform 0.5s ease-in;
+}
+.column a:hover{
+    opacity: 1.0;
+    filter: alpha(opacity=100);
+    transform: translateY(-20px);
+}
+.info h1 {
+    color: rgb(235, 235, 223);
+    padding: 10px 8px;
+    text-decoration: underline;
+    margin: 20px 8px;
+    position: absolute;
+    left: 17px;
+}
+.info p {
+    font-size: 28px;
+    color: rgb(236, 236, 225);
+    position: absolute;
+    top: 45%;
+    left: 35%;
+    transform:translate(-50%, -50%)
+}
+.info h5 {
+    font-size: 28px;
+    color: rgb(229, 229, 157);
+    position: absolute;
+    top: 75%;
+    left: 35%;
+    transform:translate(-50%, -50%)
+}
+.info h6 {
+    position:absolute;
+    top: 97%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 13px;
+}
+.info h6 button {
+    border: none;
+    background: none;
+    cursor: pointer;
+}
+.info h6 button:hover{
+    text-decoration: underline;
+}
+.tips {
+      color:rgb(236, 226, 226);
+}
+.tips p {
+    position: absolute;
+    left: 20%;
+    padding: 10px;
+    font-size: 30px;
+}
+
+@media(max-width:800px){
+    nav .mainMenu{
+        height: 100vh;
+        position: fixed;
+        top: 0;
+        right: 0;
+        left: 0;
+        z-index: 10;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background: rgb(72, 88, 88);
+        transition: 1s ease;
+        display: none;
+    }
+    nav .mainMenu .closeMenu {
+        display: block;
+        position: absolute;
+        top: 20px;
+        right: 20px;
+    }
+    nav .openMenu {
+        display:block;
+    }
+    nav .mainMenu li a:hover {
+        background: none;
+        text-decoration: cadetblue;
+        color: rgb(228, 81, 23);
+        font-size: 1.6rem;
+    }
+    .icons i {
+        display: inline-block;
+        padding: 12px;
+    }
+    .cover h6 {
+        color:rgb(255, 251, 246);
+        font-size: 20px;
+        position: absolute;
+        top: 20%;
+        left: 35%;
+        transform: translate(-50%, -50%);
+        font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    }
+    .cover h5 {
+        color:rgb(255, 251, 246);
+        font-size: 20px;
+        position: absolute;
+        top: 25%;
+        left: 13%;
+        transform: translate(-50%, -50%);
+        font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    }
+    .cover h1 {
+        color:rgb(255, 251, 246);
+        font-size: 40px;
+        position: absolute;
+        top: 60%;
+        left: 29%;
+        transform: translate(-50%, -50%);
+        font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    }
+    .cover h2 {
+        color:rgb(255, 251, 246);
+        font-size: 40px;
+        position: absolute;
+        top: 70%;
+        left: 36%;
+        transform: translate(-50%, -50%);
+        font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    }
+    .column{
+        float: left;
+        width: 33.33%;
+        padding: 1.5px;
+        position: relative;
+        text-align: center;
+        color: white;
+        
+    }
+    .tips p {
+        position: absolute;
+        left: 10%;
+        padding: 5px;
+        font-size: 20px;
+    }
+    .btns {
+        position: absolute;
+        top: 50%;
+        left: 53%;
+        transform: translate(-50%, -50%);
+    }
+    .btns a button{
+        padding: 9px 18px;
+        margin: 9px 11px;
+        font-size: 30px;
+        cursor:pointer;
+        border: none;
+        transition: 0.5s ease;
+        background: lightgrey;
+        border-radius: 10px;
+        width: 150px;
+        height: 75px;
+    }
+    .info h1 {
+        color: rgb(235, 235, 223);
+        padding: 10px 8px;
+        text-decoration: underline;
+        margin: 20px 8px;
+        position: absolute;
+        left: 17px;
+        font-size: 25;
+        font-family:Georgia, 'Times New Roman', Times, serif;
+    }
+    .info p {
+        font-size: 18px;
+        color: rgb(236, 236, 225);
+        position: absolute;
+        top: 55%;
+        left: 37.5%;
+        transform:translate(-50%, -50%);
+    }
+
+    
+    
+    
+   
+}
